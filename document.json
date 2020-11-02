@@ -32,11 +32,7 @@
     {
       "description": "Wait for Postgres Operator to spin up ",
       "exec": "until nc -z -v -w30 $ip_addr 32443; do echo \"Waiting for database connection...\"; sleep 5; done; >> output.txt 2 >> &1"
-    },
-    {
-      "description":"Create PGO Cluster",
-      "exec":"export PGO_APISERVER_URL=https://127.0.0.1:32443 && pgo create cluster contacts --username pguser --password password -n pgo >> output.txt 2 >> &1"
-   }
+    }
   ],
   "display": [
     {
