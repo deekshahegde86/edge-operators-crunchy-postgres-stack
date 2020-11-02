@@ -2,7 +2,7 @@
   "name": "Crunchy Data PostgreSQL Operator",
   "description": "Crunchy Data PostgreSQL Operator",
   "logo": "_images/SalesStack.png",
-  "has_supporting_content": false,
+  "has_supporting_content": true,
   "stack_id": "Crunchy-PostgreSQL-Operator",
   "type": "stack",
   "categories": ["PostgreSQL"],
@@ -34,7 +34,6 @@
       "exec": "until nc -z -v -w30 $ip_addr 32443; do echo \"Waiting for database connection...\"; sleep 5; done;"
     }
   ],
-  "content": ["Crunchy-PostgreSQL-Operator-tutorial.md"],
   "display": [
     {
       "name": "Developer Dashboard",
